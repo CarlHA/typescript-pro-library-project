@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "build": "tsc -p tsconfig.json",
-    "precommit": "npm test"
+    "precommit": "npm test && lint-staged"
   },
   "repository": {
     "type": "git",
