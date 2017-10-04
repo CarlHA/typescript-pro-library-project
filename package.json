@@ -1,0 +1,40 @@
+{
+  "name": "typescript-pro-library-project",
+  "version": "1.0.0",
+  "description": "A micro library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "build": "tsc -p tsconfig.json",
+    "precommit": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlHA/typescript-pro-library-project.git"
+  },
+  "author": "Carl Abrahams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlHA/typescript-pro-library-project/issues"
+  },
+  "homepage": "https://github.com/CarlHA/typescript-pro-library-project#readme",
+  "devDependencies": {
+    "@types/jest": "^21.1.2",
+    "@types/node": "^8.0.32",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.0.1",
+    "typescript": "^2.5.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": ".*\\.spec\\.ts$"
+  }
+}
